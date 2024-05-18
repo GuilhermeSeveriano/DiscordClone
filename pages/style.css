@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    
+    overflow-x: hidden;
 }
 
 *{box-sizing: border-box;}
@@ -24,26 +26,73 @@ body{
     src: url(../assets/fonts/Discord4.woff2);
 }
 
+@font-face {
+    font-family: font5;
+    src: url(../assets/fonts/gg\ sans\ Semibold.ttf);
+}
+
+@font-face {
+    font-family: font6;
+    src: url(../assets/fonts/gg\ sans\ Bold.ttf);
+}
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 70vh;
+    height: auto;
     background-color: #404EED;
-    padding-bottom: 10em;
+    padding-bottom: 7em;
+    position: relative;
+    width: 100%;
     
 }
 
+.container p:hover {
+    cursor: pointer;
+    text-decoration: underline;
 
+
+}
+
+.bt-entrar{
+    border-radius: 3em;
+    border: none;
+    padding: 0.7em;
+    width: 8.8em;
+    color: #020202;
+    font-family: font5;
+    
+}
+
+.bt-entrar:hover{
+    cursor: pointer;
+    box-shadow: 0px 12px 20px -10px black;
+    color: #404EED;
+}
+
+
+.decanto{
+    position: absolute;
+    left: 74.5%;
+    top: 39.5%;
+}
+
+.decanto2{
+    position: absolute;
+    right: 76%;
+    top: 40.5%;
+}
 
 
 .box-topo{
-    margin: 1.5em;
+    margin: 1.1em;
     display: flex;
     flex-direction: row;
     min-width: 1200px;
     justify-content: space-between;
+    align-items: center;
    
 }
 
@@ -52,23 +101,10 @@ body{
  flex-direction: row;
  font-family: font3;
  color: white;
- min-width: 300px;
+ min-width: 700px;
  justify-content: space-around;
  cursor: pointer;
-
-}
-
-
-.entrar{
-padding: .6em;    
-background-color: white;
-color: black;
-border-radius: 2em;
-font-size: .9em;
-font-family: font2;
-cursor: pointer;
-text-align: center;
-width: 8em;
+ font-size: 1em;
 }
 
 .box-centro{
@@ -76,13 +112,14 @@ display: flex;
 flex-direction: column;
 align-items: center;
 max-width: 800px;
+margin-top: 3em;
 
 }
 
 .titulo{
     font-family: font4;
-    font-size: 3em;
-    width: 10em;
+    font-size: 3.5em;
+    width: 15em;
     text-align: center;
     color: white;
 }
@@ -94,8 +131,16 @@ max-width: 800px;
     color: white;
     font-size: 1.3em;
     text-align: center;
+    padding: 2em;
+    width: 45em;
+    line-height: 1.5em;
 
 }
+
+.descricao p{
+    margin: 0;
+}
+
 .box-agrupamento-botoes{
     display: flex;
     flex-direction: row;
@@ -138,13 +183,14 @@ cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10em
+    padding: 3em
 }
 
 
 
 .box-img1 img{
-   margin-right: 5em;
+   margin-right: 6em;
+   margin-top: 7em;
 
 
 }
@@ -154,23 +200,230 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
 }
 
 .box-titulo1{
-    font-family: font3;
-    font-size: 3.0em;
-    width:7em;
+    font-family: font6;
+    font-weight: bolder;
+    font-size: 2.5em;
+    width:8.5em;
     font-weight:bold;
-    color: #000;
+    color: #242424;
+    height: 8em;
+    line-height: 1.3em;
+    
 
 }
 
 
 .box-txtmenor1{
     font-family: font1;
-    font-size:1.2em;
+    font-size:1.5em;
     width: 20em;
     line-height: 1.5em;
     margin-top: 1em;
+    color: #23272a;
+    
+}
+
+.box-txtmenor1 p{
+    margin: 0;
+}
+
+
+
+/* ------------------------------------------------------------------ */
+.container3{
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.box-texto3{
+    padding: 4em;
+
+}
+
+.box-titulo2{
+    font-family: font6;
+    font-size: 3.0em;
+    width:8.5em;
+    font-weight:bold;
+    color: #242424;
+    padding: 0;
+}
+
+.box-titulo2 h3{
+    margin: 0;
+    margin-bottom: 0.5em;
+    line-height: 1em;
+}
+
+.box-txtmenor2{
+    font-family: font1;
+    font-size:1.5em;
+    width: 20em;
+    line-height: 1.5em;
+    margin: 0;
+    color: #23272a;
+
+}
+
+.box-titulo3{
+    font-family: font6;
+    font-size: 3.0em;
+    width:8.5em;
+    font-weight:bold;
+    color: #23272a;
+    padding-top: 2em;
+}
+
+.box-titulo3 h3{
+    margin: 0;
+    margin-bottom: 0.5em;
+    line-height: 1em;
+}
+
+
+/* ------------------------------------------------------------------ */
+
+.lastcard{
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f6f6;
+    padding-bottom: 5em;
+    
+
+
+}
+
+.titulotec{
+    font-family: font4;
+    font-size: 1.4em;
+    color: #23272a;
+    
+}
+
+.descricao2{
+    width: 48em;
+    text-align: center;
+    font-family: font1;
+    font-size:1.4em;
+}
+
+
+.jornada{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    justify-content: center;
+    position: relative;
+    padding-bottom: 3em;
+    height: 7em;
+
+
+}
+
+.jornada h3{
+    align-items: center;
+    font-family: font3;
+    font-size: 2em;
+    
+}
+
+.estrelas{
+    
+    position: absolute;
+    height: 6em;
+    
+    
+    
+}
+
+.download button{
+    background-color: #404EED ;
+    color: #ffff;
+    height: 2.5em;
+    border: none;
+    border-radius: 50px;
+    width: 15em;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: font2;
+}
+
+
+.rodape{
+    padding-top: 3em;
+    height: 28em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #23272A;
+}
+
+
+.social{
+    padding: 2em;
+}
+
+.social img{
+    margin: 0.35em;
+    
+}
+
+.Topo{
+    font-family: font1;
+    width: 13em;
+    color: #ffff;
+    
+
+}
+
+.Topo p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.primeiro{
+    color: #404EED;
+}
+
+.pt2{
+    display: flex;
+    flex-direction: row;
+    background-color: #23272A;
+    border-top: 1.5px solid #5865f2;
+    justify-content: space-between;
+    padding: 2em;
+    padding-left: 6em;
+    padding-right: 6em;
+    
+    
+
+    
+}
+.pt2 button{
+    border: none;
+    border-radius: 2em;
+    background-color: #5865f2;
+    color: #ffff;
+    font-family: font3;
+    padding: 1em;
+
+}
+
+.pt2 button:hover{
+    cursor: pointer;
+    background-color: #727cee;
+    
 }
