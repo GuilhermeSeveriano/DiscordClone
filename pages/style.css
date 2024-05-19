@@ -40,8 +40,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
-    height: auto;
+    /* height: auto; */
+    min-height: 600px;
     background-color: #404EED;
     padding-bottom: 7em;
     position: relative;
@@ -426,4 +428,176 @@ cursor: pointer;
     cursor: pointer;
     background-color: #727cee;
     
+}
+
+
+
+/* -------Responsividade--------------- */
+
+@media screen and (max-width: 1278px){
+    .agrupamento{
+        display: none;
+        justify-content: space-between;
+        
+        min-width: 0px;
+    }
+
+    .box-topo{
+        position: relative;
+        min-width: 479px;
+    }
+
+
+    .box-centro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        margin-top: 3em;
+        
+        }
+
+
+    .decanto{
+        display: none;
+
+    }    
+
+    .decanto2{
+        display: none;
+    }
+
+}
+
+/* -------------------------------------------------- */
+
+
+@media screen and (max-width: 1278px){
+
+    .container2{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+    }
+
+    
+    .box-img1 img{
+        height:500px ;
+    }
+
+    .box-titulo1{
+        font-size: 2em;
+        width: 20em;
+        padding: 0px;
+        margin: 0px;
+        height: auto;
+    }
+
+
+    .box-texto2{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+
+    .container3{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 5em;
+    }
+
+    .box-titulo2{
+        font-size: 2em;
+        width: 15em;
+    }
+
+    
+
+    .box-texto3{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box-titulo3{
+        width: 15em;
+        font-size: 2em ;
+    }
+
+    .box-txtmenor2{
+        text-align:justify ; 
+        font-size: 1.3em;
+    }
+
+
+    .titulotec{
+        font-size: 1em;
+    }
+    
+    .descricao2{
+        width: 25em;
+        text-align: justify;
+    }
+
+
+
+}
+/* ----------------------------------------------------- */
+
+@media screen and (max-width: 825px){
+    
+    .titulo{
+        font-size: 2.5em;
+    }
+
+    .descricao{
+        width: 30em;
+    }
+
+    .lastcard img{
+
+        height: 20em;
+    }
+
+
+
+}
+
+@media screen and (max-width: 809px){
+    .box-agrupamento-botoes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-img1 img{
+        width: 30em;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 675px){
+    .box-titulo1{
+        width: 10em;
+    }
+
+}
+
+@media screen and (max-width: 592px){
+    .titulo{
+        font-size: 2em;
+    }
+
+    .descricao{
+        width: 25em;
+    }
+
 }
