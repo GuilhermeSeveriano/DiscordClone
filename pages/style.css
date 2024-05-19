@@ -600,4 +600,13 @@ cursor: pointer;
         width: 25em;
     }
 
+    .descricao2{
+        width: 20em;
+
+    }
+
+    .lastcard img{
+        height: 19em;
+    }
+
 }
