@@ -409,6 +409,7 @@ cursor: pointer;
     padding: 2em;
     padding-left: 6em;
     padding-right: 6em;
+    width: 75em;
     
     
 
@@ -428,6 +429,14 @@ cursor: pointer;
     cursor: pointer;
     background-color: #727cee;
     
+}
+
+.dimensao{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #23272A;
+
 }
 
 
