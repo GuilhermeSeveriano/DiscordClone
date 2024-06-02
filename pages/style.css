@@ -343,8 +343,8 @@ cursor: pointer;
 
 .estrelas{
     
-    position: absolute;
-    height: 6em;
+    height: 100%;
+    width: 100%;
     
     
     
@@ -365,7 +365,7 @@ cursor: pointer;
 
 .rodape{
     padding-top: 3em;
-    height: 28em;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -390,15 +390,29 @@ cursor: pointer;
 
 }
 
+.agroup-geral{
+    display: flex;
+    flex-direction: row;
+}
+
+.agroup1{
+    display: flex;
+    flex-direction: row;
+}
+
 .Topo p:hover{
     cursor: pointer;
     text-decoration: underline;
 
 }
 
+
 .primeiro{
     color: #404EED;
+    text-decoration: none !important;
 }
+
+
 
 .pt2{
     display: flex;
@@ -410,6 +424,7 @@ cursor: pointer;
     padding-left: 6em;
     padding-right: 6em;
     width: 75em;
+    
     
     
 
@@ -435,6 +450,7 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     width: 100%;
+    height: auto;
     background-color: #23272A;
 
 }
@@ -559,6 +575,15 @@ cursor: pointer;
 }
 /* ----------------------------------------------------- */
 
+@media screen and (max-width: 910px){
+    .agroup-geral{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
 @media screen and (max-width: 825px){
     
     .titulo{
@@ -588,6 +613,11 @@ cursor: pointer;
         width: 30em;
     }
 
+    .titulotec{
+        font-size: 1.2em ;
+        text-align: center;
+    }
+
     
 
 }
@@ -598,9 +628,21 @@ cursor: pointer;
         width: 10em;
     }
 
+    .box-img2 img{
+        height: 380px;
+        width: auto;
+
+    }
+
+    .titulotec{
+        font-size: 1.2em ;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 592px){
+ 
     .titulo{
         font-size: 2em;
     }
@@ -616,6 +658,157 @@ cursor: pointer;
 
     .lastcard img{
         height: 19em;
+    }
+
+    .box-img1 img{
+        text-align: center;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 499px){
+    .box-topo{
+        position: relative;
+        min-width: 400px;
+    }
+   
+    .rodape{
+    flex-direction: column;
+   }
+
+   .agroup1{
+    margin-left: 3em;
+   }
+}
+
+@media screen and (max-width: 430px){
+
+    .box-topo{
+        min-width: 380px;
+    }
+
+    .titulo{
+        font-size: 1.5em;
+
+    }
+
+    .descricao{
+        width: 20em;
+    }
+
+    .box-centro{
+        width: auto;
+    }
+
+    .box-img1 img{
+        margin: 0;
+        height: 250px;
+        width: auto;
+    }
+
+    .box-txtmenor1{
+        width: 15em;
+        text-align: justify;
+    }
+
+    .box-img2 img{
+        height: 250px;
+        margin: 0;
+        width: auto;
+    }
+
+    .box-titulo2{
+        font-size: 1.7em;
+
+    }
+
+    .box-txtmenor2{
+        width: 15em;
+    }
+
+    .box-titulo3{
+        font-size: 1.6em;
+    }
+
+    .titulotec{
+        font-size: 1em;
+        margin-left: 30px;
+    }
+
+    .descricao2{
+        width: 15em;
+
+    }
+
+    .lastcard img{
+        width: auto;
+        height: 14.5em;
+
+    }
+
+    .jornada h3{
+        text-align: center;
+        font-size: 1.7em;
+        margin: 0;
+    }
+
+    .estrelas{
+        display: none;
+        width: auto;
+        height: 2em;
+    }
+
+    .rodape{
+        flex-direction: column;
+    }
+
+    .agroup-geral{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .agroup1{
+        display: flex;
+        flex-direction: row;
+        margin-left: 1em;
+    }
+
+
+    .pt2{
+        padding: 1em;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .pt2 img{
+        height: 1.5em;
+
+    }
+
+}
+
+
+@media screen and (max-width: 390px){
+    .box-topo{
+        min-width: 368px;
+    }
+    
+    .descricao{
+        width: 18.5em;
+    }
+    .box-agrupamento-botoes{
+        width: 14.5em;
+
+    }
+
+    .botao2{
+        width: 16.5em;
+    }
+
+    .box-titulo2{
+        font-size: 1.6em;
+
     }
 
 }
