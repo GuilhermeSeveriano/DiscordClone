@@ -7,7 +7,7 @@
 [PROJECT__BADGE]: https://img.shields.io/badge/📱Visit_this_project-000?style=for-the-badge&logo=project
 [PROJECT__URL]: https://github.com/Fernanda-Kipper/Readme-Templates
 
-<h1 align="center" style="font-weight: bold;">Dicord Clone maio/2024 💻</h1>
+<h1 align="center" style="font-weight: bold;">Discord Clone maio/2024 💻</h1>
 
 <h2 id="started">📌 Tecnologias Utilizadas </h2>
 
