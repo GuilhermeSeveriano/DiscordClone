@@ -17,8 +17,7 @@
 
 
 <p align="center">
-    <img src="https://github.com/GuilhermeSeveriano/Portfolio/assets/87097691/baf9adfa-d1de-4e8c-8724-547b5d421e5c" alt="Image Example" width="500px" height="auto">
-    <img src="https://github.com/GuilhermeSeveriano/Portfolio/assets/87097691/5c95d3b9-59ca-4ecf-85fe-cf5c44be03eb" alt="Image Example" width="auto" height="300px">    
+    <img src="https://github.com/GuilhermeSeveriano/DiscordClone/assets/87097691/6aea64ae-9061-4927-8fd3-3bf44fc904d7">    
 </p>
 
 <h2 id="started">📌 Sobre</h2>
